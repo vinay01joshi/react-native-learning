@@ -11,6 +11,7 @@ import { StatusBar} from 'react-native';
 import Home from './Home';
 import Tickets from './Tickets';
 import Contact from './Contact';
+import News from './News';
 import TicketPurchase from './TextPurchase';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
@@ -57,7 +58,16 @@ function App(): JSX.Element {
                 headerTitleStyle: {fontFamily:'Ubuntu-Regular'},
                 headerTitle: 'Purchase Ticket'
               }}
-             />             
+             /> 
+             <Stack.Screen
+              name='News'
+              component={News}
+              options={{
+                headerTitleAlign: 'center',
+                headerTitleStyle: {fontFamily:'Ubuntu-Regular'},
+                headerTitle: 'Latest News'
+              }}
+             />            
         </Stack.Navigator>
       </NavigationContainer>      
    </>     
