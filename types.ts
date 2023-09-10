@@ -13,7 +13,8 @@ type TRootParamList = {
   Home: NavigatorScreenParams<TicketParamList>;
   Profile: undefined,
   Tickets: undefined,
-  Contact: undefined
+  Contact: undefined,
+  News: undefined
 };
 
 declare global {
